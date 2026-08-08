@@ -1,0 +1,54 @@
+body {
+  background-color: beige;
+  color: hotpink;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: lightpink;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: lightcoral;
+  margin: 0 10px;
+}
+
+section {
+  margin: 5px;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: mediumaquamarine;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: mediumaquamarine;
+}
+
+#experience ul {
+  list-style: none;
+}
+
+#experience li {
+  background-color: lightpink;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+}
+
+#connect ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#connect a {
+  color: lightcoral;
+}
