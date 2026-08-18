@@ -56,3 +56,11 @@ h2 {
 #connect a {
   color: lightcoral;
 }
+
+#Skills ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
