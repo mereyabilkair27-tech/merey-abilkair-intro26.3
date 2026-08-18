@@ -41,12 +41,16 @@ h2 {
   padding: 10px;
   margin: 10px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #connect ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 #connect a {
