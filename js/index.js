@@ -44,3 +44,23 @@ messageForm.addEventListener("submit", (event) => {
   messageList.appendChild(newMessage);
   messageForm.reset();
 });
+
+let repositories;
+fetch("https://api.github.com/users/mereyabilkair27-tech/repos")
+  .then((response) => response.json())
+  .then((data) => {
+    repositories = data;
+    console.log(repositories);
+
+    let projectSection = document.querySelector("#Projects");
+    let projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.log("Error fetching repositories:", error);
+  });

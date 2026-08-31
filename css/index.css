@@ -116,3 +116,16 @@ h2 {
     padding: 8px;
   }
 }
+
+#Projects ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+#Projects li {
+  padding: 10px;
+  border: 1px solid lightpink;
+}
