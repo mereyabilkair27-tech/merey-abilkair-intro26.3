@@ -55,3 +55,8 @@ body > img {
   max-width: 90%;
   border-radius: 15px;
 }
+
+#result p {
+  margin: 10px auto;
+  max-width: 600px;
+}

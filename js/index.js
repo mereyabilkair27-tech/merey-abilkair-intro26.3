@@ -57,7 +57,11 @@ fetch("https://api.github.com/users/mereyabilkair27-tech/repos")
 
     for (let i = 0; i < repositories.length; i++) {
       let project = document.createElement("li");
-      project.innerText = repositories[i].name;
+      let projectLink = document.createElement("a");
+      projectLink.innerText = repositories[i].name;
+      projectLink.href = repositories[i].html_url;
+      projectLink.target = "_blank";
+      project.appendChild(projectLink);
       projectList.appendChild(project);
     }
   })
